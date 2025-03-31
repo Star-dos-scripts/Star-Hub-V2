@@ -1,6 +1,21 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Star Hub BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+
+})
+
+local Tab = Window:MakeTab({
+    Name = "Nosso servidor!",
+    Icon = "rbxassetid://18810599582",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Copiar Link do Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/kBDk5YMR2R")
+    end
+})
 local Tab = Window:MakeTab({
 	Name = "Scripts",
 	Icon = "rbxassetid://79196295054020",
@@ -26,21 +41,19 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Jãozin Hub",
+	Name = "Jãozin Hub ( Em Breve )",
 	Callback = function()
       		print("button pressed")
   	end    
-})
-
-local Tab = Window:MakeTab({
-    Name = "Nosso servidor!",
+  
+  local Tab = Window:MakeTab({
+    Name = "Universal",
     Icon = "rbxassetid://18810599582",
     PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name = "Copiar Link do Discord",
-    Callback = function()
-        setclipboard("https://discord.gg/kBDk5YMR2R")
-    end
-})
+    
+    Tab:AddButton({
+	Name = "Fly",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zackdoesstuff/ROBLOX-Fly-Script/refs/heads/main/Fly%20Script"))()
+  	end    
+    
