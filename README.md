@@ -34,7 +34,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "Nosso servidor!",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://18810599582",
     PremiumOnly = false
 })
 
