@@ -21,12 +21,12 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Rael Hub",
 	Callback = function()
-      		
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt"))()	
   	end    
 })
 
 Tab:AddButton({
-	Name = "Jãozin Hub",
+	Name = "Jãozin Hub(em breve)",
 	Callback = function()
       		print("button pressed")
   	end    
