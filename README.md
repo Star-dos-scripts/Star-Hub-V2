@@ -21,14 +21,26 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Rael Hub",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt"))()	
+      		print("button pressed")
   	end    
 })
 
 Tab:AddButton({
-	Name = "Jãozin Hub(em breve)",
+	Name = "Jãozin Hub",
 	Callback = function()
       		print("button pressed")
   	end    
 })
 
+local Tab = Window:MakeTab({
+    Name = "Nosso servidor!",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Copiar Link do Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/seu-servidor")
+    end
+})
