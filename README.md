@@ -46,4 +46,15 @@ Tab:AddButton({
       		print("button pressed")
   	end    
   })
-  
+  local Tab = Window:MakeTab({
+    Name = "Funções",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Ativar Fly",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zackdoesstuff/ROBLOX-Fly-Script/refs/heads/main/Fly%20Script"))()
+    end
+})
