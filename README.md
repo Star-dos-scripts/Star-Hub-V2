@@ -41,6 +41,6 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
     Name = "Copiar Link do Discord",
     Callback = function()
-        setclipboard("https://discord.gg/seu-servidor")
+        setclipboard("https://discord.gg/kBDk5YMR2R")
     end
 })
