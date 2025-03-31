@@ -21,7 +21,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Rael Hub",
 	Callback = function()
-      		print("button pressed")
+      		
   	end    
 })
 
