@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 local Window = OrionLib:MakeWindow({Name = "Star Hub BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-	Name = "Seção BETA",
+	Name = "Scripts",
 	Icon = "rbxassetid://79196295054020",
 	PremiumOnly = false
 })
@@ -14,7 +14,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Chaos Hub",
 	Callback = function()
-      		print("button pressed")
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Luscaa22/Calabocaa/refs/heads/main/ChaosHub"))()
   	end    
 })
 
