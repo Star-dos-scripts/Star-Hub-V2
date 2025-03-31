@@ -45,14 +45,5 @@ Tab:AddButton({
 	Callback = function()
       		print("button pressed")
   	end    
+  })
   
-  local Tab = Window:MakeTab({
-    Name = "Universal",
-    Icon = "rbxassetid://18810599582",
-    PremiumOnly = false
-        Tab:AddButton({
-	Name = "Fly",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zackdoesstuff/ROBLOX-Fly-Script/refs/heads/main/Fly%20Script"))()
-  	end    
-    
