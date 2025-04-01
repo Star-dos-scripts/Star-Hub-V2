@@ -1,6 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Star Hub BETA", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
+local Window = OrionLib:MakeWindow({
+    Name = "StarHub BETA",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "StarHub",
+    Theme = {
+        Main = Color3.fromRGB(0, 0, 0), -- Preto
+        Accent = Color3.fromRGB(255, 204, 0) -- Amarelo
+    }
+})
 
 })
 
@@ -45,16 +53,15 @@ Tab:AddButton({
 	Callback = function()
       		print("button pressed")
   	end    
-  })
+  
   local Tab = Window:MakeTab({
-    Name = "Funções",
-    Icon = "rbxassetid://4483345998",
+    Name = "Universal",
+    Icon = "rbxassetid://18810599582",
     PremiumOnly = false
-})
-
+    
 Tab:AddButton({
-    Name = "Ativar Fly",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/zackdoesstuff/ROBLOX-Fly-Script/refs/heads/main/Fly%20Script"))()
-    end
-})
+	Name = "Fly",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zackdoesstuff/ROBLOX-Fly-Script/refs/heads/main/Fly%20Script"))()
+  	end    
+    
